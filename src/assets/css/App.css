@@ -1,0 +1,15 @@
+.App
+{
+    text-align: center;
+    background-color: #172763;
+}
+
+.Container
+{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: calc(5px + 2vmin);
+  margin-bottom: 22vh;
+}

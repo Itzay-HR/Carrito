@@ -1,0 +1,70 @@
+h2
+{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+}
+
+.Videojuegos
+{
+    margin-top: 5.324813631522897vh;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.Juegos
+{
+    margin-top: 5.324813631522897vh;
+    display:inline-block;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5vmin;
+    min-height: 35vh;
+    width: 50%;
+    background-color: rgb(34, 84, 177);
+    border-radius: 1.0649627263045793vh;
+    /* border: solid 0.21299254526091588vh black; */
+}
+
+.PosterJuego
+{
+    min-width: 15vw; 
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.Propiedades
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 22vw; 
+    font-size: calc(0.5324813631522897vh + 2vmin);
+}
+
+.Nombres
+{
+    margin-top: .5vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Boton
+{
+    font-size: calc(0.5324813631522897vh + 2vmin);
+    margin-bottom: 1vh;
+}
+
+img
+{
+    margin-top: 2vh;
+    width: 90%;
+}

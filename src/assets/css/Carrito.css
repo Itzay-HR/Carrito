@@ -1,0 +1,43 @@
+h2,p
+{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+}
+
+.Container2
+{
+    margin-top: 6.5vh;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.Carrito
+{
+    display:flex;
+    text-align: center;
+    flex-direction:column;
+    justify-content: space-around;
+    min-height: 60vmin;
+    flex-wrap: wrap;
+    margin-top: 5vmin;
+    font-size: calc(0.5324813631522897vh + 2vmin);
+    min-height: 35vh;
+    background-color: rgb(34, 84, 177);
+    border-radius: 1.0649627263045793vh;
+}
+
+.VacioCarrito
+{
+    display:flex;
+    text-align: center;
+    flex-direction:column;
+    justify-content: space-around;
+    min-height: 1vmin;
+    flex-wrap: wrap;
+    margin-top: 11vmin;
+    font-size: calc(0.8519701810436635vh + 2vmin);
+    min-width: 40vw;
+}
