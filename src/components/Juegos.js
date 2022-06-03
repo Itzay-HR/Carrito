@@ -1,6 +1,6 @@
 import React from "react";
 import '../assets/css/Juegos.css';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 const Juegos = (props) =>
 {

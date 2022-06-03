@@ -1,6 +1,6 @@
 import React from "react";
 import '../assets/css/Carrito.css';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 const Carrito = (props) =>
 {
@@ -17,7 +17,7 @@ const Carrito = (props) =>
                             <p><strong>{props.carrito.nombre}</strong></p>
                             <p><strong>Cantidad: {props.carrito.contador}</strong></p>
                             <div className="Propiedades">
-                                <Button className="Boton" onClick={()=>props.delete_Carrito(props.carrito, props.carrito.nombre)}variant="danger">-</Button>
+                                <Button variant="danger" className="Boton" onClick={()=>props.delete_Carrito(props.carrito, props.carrito.nombre)}>-</Button>
                             </div>
                         </div> 
                     </div>
