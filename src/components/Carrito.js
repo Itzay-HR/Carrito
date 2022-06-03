@@ -1,6 +1,5 @@
 import React from "react";
 import '../assets/css/Carrito.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
 const Carrito = (props) =>
