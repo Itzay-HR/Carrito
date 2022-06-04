@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Carrito/static/css/main.00a46711.css",
+    "main.js": "/Carrito/static/js/main.6d3fc5e4.js",
+    "static/js/787.ca51fd5d.chunk.js": "/Carrito/static/js/787.ca51fd5d.chunk.js",
+    "static/media/Banner2.png": "/Carrito/static/media/Banner2.4b8b4fcf56f3e7241f5d.png",
+    "static/media/Claners.png": "/Carrito/static/media/Claners.684405df7f0dba3cf957.png",
+    "static/media/Tunic.jpeg": "/Carrito/static/media/Tunic.2d982c69c99bb0377555.jpeg",
+    "index.html": "/Carrito/index.html",
+    "main.00a46711.css.map": "/Carrito/static/css/main.00a46711.css.map",
+    "main.6d3fc5e4.js.map": "/Carrito/static/js/main.6d3fc5e4.js.map",
+    "787.ca51fd5d.chunk.js.map": "/Carrito/static/js/787.ca51fd5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00a46711.css",
+    "static/js/main.6d3fc5e4.js"
+  ]
+}
