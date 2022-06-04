@@ -1,8 +1,8 @@
 {
+  "homepage": "https://Itzay-HR.github.io/Carrito",
   "name": "componente_carrito",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Itzay-HR.github.io/Carrito",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
