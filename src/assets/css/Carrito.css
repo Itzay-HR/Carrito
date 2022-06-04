@@ -8,10 +8,11 @@ h2,p
 
 .Container2
 {
-    margin-top: 6.5vh;
+    margin-top: 3vh;
     justify-content: center;
     align-items: center;
     display: inline-block;
+    /*background-color: black*/
 }
 
 .Carrito
@@ -27,17 +28,19 @@ h2,p
     min-height: 35vh;
     background-color: rgb(34, 84, 177);
     border-radius: 1.0649627263045793vh;
+    /*background-color: green;*/
 }
 
 .VacioCarrito
 {
-    display:flex;
+    display:inline-block;
     text-align: center;
+    align-items: center;
     flex-direction:column;
-    justify-content: space-around;
     min-height: 1vmin;
     flex-wrap: wrap;
-    margin-top: 11vmin;
+    margin-top: 20vmin;
     font-size: calc(0.8519701810436635vh + 2vmin);
     min-width: 40vw;
+    /*background-color: green;*/
 }

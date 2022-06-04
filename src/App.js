@@ -5,30 +5,55 @@ import Juegos from './components/Juegos';
 import Carrito from './components/Carrito';
 import Footer from './components/Footer';
 import Tunic from './assets/img/Tunic.jpeg';
+import Itzay from './assets/img/Banner2.png';
 
 const App=()=> {
-  const [contador, setContador] = useState(0);
-  const [carrito, setCarrito] = useState([0]);
-  const [productos] = useState([{codigo:1, nombre: "Tunic",  url: Tunic}]);
+  const [carrito, setCarrito] = useState([]);
+  const [productos] = useState([
+    {codigo:1, nombre: "Tunic",url: Tunic}, 
+    {codigo:2, nombre: "Itzay",url: Itzay}
+  ]);
 
   const add_carrito=(_carrito,_nombre)=>{
-    setContador(contador + 1);
-    const temp={
-      codigo:_carrito.codigo,
-      nombre:_nombre,
-      contador:contador+1,
+    let temporal = { ...productos.find((e) => e.codigo === _carrito.codigo)};
+    const carritoExiste = carrito.find((e) => e.codigo === _carrito.codigo);
+
+    console.log("existe", carritoExiste)
+    console.log("carrito",carrito)
+
+    if(carritoExiste !== undefined)
+    {
+      carrito.map((arr) => {
+        if(arr.codigo === _carrito.codigo)
+        {
+          arr.cantidad = arr.cantidad + 1;
+        }
+      });
+      setCarrito([...carrito]);
     }
-    setCarrito(temp);
+    else
+    {
+      temporal["cantidad"] = 1;
+      setCarrito([...carrito, temporal]);
+    }
   }
 
   let delete_Carrito=(_carrito,_nombre)=>{
-    setContador(contador-1);
-    const temp={
-      codigo:_carrito.codigo,
-      nombre:_nombre,
-      contador:contador - 1,
+    const temporal = carrito.find((e) => e.codigo === _carrito.codigo);
+
+    if(carrito.length > 0 && temporal !== undefined)
+    {
+      if(temporal.cantidad > 0)
+      {
+        temporal.cantidad--;
+        setCarrito([...carrito]);
+      }
+      if(temporal.cantidad == 0)
+      {
+        const Temp = carrito.filter((e) => e.codigo !== _carrito.codigo);
+        setCarrito(Temp);
+      }
     }
-    setCarrito(temp);
   } 
 
   return (

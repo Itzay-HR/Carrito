@@ -6,22 +6,22 @@ const Carrito = (props) =>
 {
     return(
         <div className="Container2">
+            <h2>Carrito</h2>
             {
                 Object.keys(props.carrito).length!==0
 
                 ?
-
-                    <div>
-                        <h2>Carrito</h2>
-                        <div className="Carrito">
-                            <p><strong>{props.carrito.nombre}</strong></p>
-                            <p><strong>Cantidad: {props.carrito.contador}</strong></p>
-                            <div className="Propiedades">
-                                <Button variant="danger" className="Boton" onClick={()=>props.delete_Carrito(props.carrito, props.carrito.nombre)}>-</Button>
-                            </div>
-                        </div> 
-                    </div>
-
+                    props.carrito.map((a,index)=>
+                        <div key={index}>
+                            <div className="Carrito">
+                                <p><strong>{a.nombre}</strong></p>
+                                <p><strong>Cantidad: {a.cantidad}</strong></p>
+                                <div className="Propiedades">
+                                    <Button variant="danger" className="Boton" onClick={()=>props.delete_Carrito(a, a.nombre)}>-</Button>
+                                </div>
+                            </div> 
+                        </div>
+                    )
                 :
 
                     <div className="VacioCarrito">

@@ -1,6 +1,6 @@
 h2
 {
-    display:flex;
+    
     justify-content: center;
     align-items: center; 
     color: white;
@@ -8,22 +8,24 @@ h2
 
 .Videojuegos
 {
-    margin-top: 5.324813631522897vh;
+    margin-top: 3vh;
     justify-content: center;
     align-items: center;
-    display: inline-block;
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    /*background-color: red;*/
 }
 
 .Juegos
 {
-    margin-top: 5.324813631522897vh;
-    display:inline-block;
+    margin-bottom: 3vh;
+    display:flex;
     flex-direction:row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 5vmin;
     min-height: 35vh;
-    width: 50%;
+    width: 30%;
     background-color: rgb(34, 84, 177);
     border-radius: 1.0649627263045793vh;
     /* border: solid 0.21299254526091588vh black; */
@@ -32,14 +34,14 @@ h2
 .PosterJuego
 {
     min-width: 15vw; 
-    display: block;
+    display: inline;
     justify-content: center;
     align-items: center;
 }
 
 .Propiedades
 {
-    display:flex;
+    display:inline;
     flex-direction:column;
     justify-content: center;
     align-items: center;
